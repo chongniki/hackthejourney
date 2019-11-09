@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace hackthejourney
 {
-    public partial class MainPage : ContentPage
+    public partial class ReminderPage : ContentPage
     {
-        public MainPage()
+        public ReminderPage()
         {
             InitializeComponent();
         }

@@ -5,22 +5,54 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="hackthejourney.MainPage">
-    <Grid>
-        <Label Text="Add your Med"
-               Grid.Row="0"
-               Grid.Column="3"/>
-        <Button Text="My Meds"
-                Grid.Row="0"
-                Grid.Column="0"
-                VerticalOptions="End"
-                HorizontalOptions="End"
-                HeightRequest="50"/>
-        <Button Text="My Flights"
-                Grid.Row="0"
-                Grid.Column="1"
-                VerticalOptions="End"
-                HorizontalOptions="End"
-                />
+    <Grid BackgroundColor="White">
+
+
+          <Image Source="logo.png"
+                  Aspect="AspectFit"
+                  HorizontalOptions="Start"
+                  VerticalOptions="StartAndExpand"
+                  WidthRequest="150"
+                  HeightRequest="60"
+                  Grid.Row="0"
+                  Grid.Column="0"/>
+
+            <ImageButton Source="calendar.png"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    WidthRequest="150"
+                    HeightRequest="60"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="flights.png"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    HeightRequest="60"
+                    WidthRequest="100"
+                    CornerRadius="5"
+                    />
+            <ImageButton Source="home.png"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    HeightRequest="60"
+                    WidthRequest="100"
+                    CornerRadius="5"
+                    />
+            <ImageButton Source="guide"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    HeightRequest="60"
+                    WidthRequest="100"
+                    CornerRadius="5"
+                    />
+
     </Grid>
 
 </ContentPage>
