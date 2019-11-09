@@ -1,5 +1,47 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="hackthejourney.FlightInfo">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <Grid>
+    <Image Source="logo.png"
+                  Aspect="AspectFit"
+                  HorizontalOptions="Start"
+                  VerticalOptions="StartAndExpand"
+                  WidthRequest="150"
+                  HeightRequest="60"
+                  Grid.Row="0"
+                  Grid.Column="0"/>
+
+            <ImageButton Source="calendar.png"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="flights.png"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="54"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="home.png"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="guide.png"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+
+    </Grid>
 </ContentPage>
