@@ -5,12 +5,22 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="hackthejourney.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Test" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <Grid>
+        <Label Text="Add your Med"
+               Grid.Row="0"
+               Grid.Column="3"/>
+        <Button Text="My Meds"
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                HeightRequest="50"/>
+        <Button Text="My Flights"
+                Grid.Row="0"
+                Grid.Column="1"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                />
+    </Grid>
 
 </ContentPage>
