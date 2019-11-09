@@ -1,16 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="hackthejourney.ReminderPage">
+
     <Grid BackgroundColor="White">
 
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
           <Image Source="logo.png"
                   Aspect="AspectFit"
-                  HorizontalOptions="Start"
-                  VerticalOptions="StartAndExpand"
-                  WidthRequest="150"
+                  HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="Start"
+                  WidthRequest="170"
                   HeightRequest="60"
                   Grid.Row="0"
                   Grid.Column="0"/>
+          <Grid Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="3">
+              <Frame HorizontalOptions="Center"
+                  VerticalOptions="CenterAndExpand"
+                  Grid.Row="1"
+                  Grid.RowSpan="3"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2">
+                  <Label Text="Hey Laura! It's time for your insulin shot."
+                         FontSize="15"/>
+              </Frame>
+
+          </Grid>
 
             <ImageButton Source="calendar.png"
                     Grid.Row="4"

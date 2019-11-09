@@ -5,17 +5,43 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="hackthejourney.MainPage">
-    <Grid BackgroundColor="White">
+        <Grid BackgroundColor="White">
 
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
           <Image Source="logo.png"
                   Aspect="AspectFit"
-                  HorizontalOptions="Start"
-                  VerticalOptions="StartAndExpand"
-                  WidthRequest="150"
+                  HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="Start"
+                  WidthRequest="170"
                   HeightRequest="60"
                   Grid.Row="0"
                   Grid.Column="0"/>
+          <Grid Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3">
+              <Frame HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="CenterAndExpand"
+                  Grid.Row="1"
+                  Grid.RowSpan="3"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="3">
+                  <Label Text="Replace"
+                            FontSize="15"/>
+              </Frame>
+
+          </Grid>
 
             <ImageButton Source="calendar.png"
                     Grid.Row="4"
