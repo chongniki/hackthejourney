@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hackthejourney.Android", "hackthejourney.Android\hackthejourney.Android.csproj", "{5481ADE3-A53F-4209-90F5-AF9C692FC3B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hackthejourney", "hackthejourney\hackthejourney.csproj", "{2B2F75D1-5C5F-4E7B-9086-12325CF12801}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5481ADE3-A53F-4209-90F5-AF9C692FC3B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5481ADE3-A53F-4209-90F5-AF9C692FC3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5481ADE3-A53F-4209-90F5-AF9C692FC3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5481ADE3-A53F-4209-90F5-AF9C692FC3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2F75D1-5C5F-4E7B-9086-12325CF12801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2F75D1-5C5F-4E7B-9086-12325CF12801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2F75D1-5C5F-4E7B-9086-12325CF12801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2F75D1-5C5F-4E7B-9086-12325CF12801}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
