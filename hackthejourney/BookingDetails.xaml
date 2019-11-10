@@ -1,5 +1,86 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="hackthejourney.BookingDetails">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <Grid BackgroundColor="White"
+          x:Name="BookingDetailsGrid">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+          <Image Source="logo.png"
+                  Aspect="AspectFit"
+                  HorizontalOptions="CenterAndExpand"
+                  VerticalOptions="Start"
+                  WidthRequest="170"
+                  HeightRequest="60"
+                  Grid.Row="0"
+                  Grid.Column="0"/>
+          <!--<Grid Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3">
+          <ListView Grid.Column="1"
+                    x:Name="MedView"
+                    ItemsSource="{Binding Items}">
+              <ListView.ItemTemplate>
+                 <DataTemplate>
+                     <TextCell Text="{Binding Dose}" />
+                 </DataTemplate>
+              </ListView.ItemTemplate>
+
+          </ListView>
+          <ListView Grid.Column="1">
+              <ListView.ItemTemplate>
+                 <DataTemplate>
+                     <TextCell Text="{Binding DisplayName}" />
+                 </DataTemplate>
+              </ListView.ItemTemplate>
+
+          </ListView> 
+
+          </Grid>-->
+
+            <ImageButton x:Name="calendarButton"
+                    Source="calendar.png"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="flights.png"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="54"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="home.png"
+                    Grid.Row="4"
+                    Grid.Column="2"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+            <ImageButton Source="guide.png"
+                    Grid.Row="4"
+                    Grid.Column="3"
+                    VerticalOptions="End"
+                    HorizontalOptions="EndAndExpand"
+                    HeightRequest="70"
+                    WidthRequest="55"
+                    Aspect="AspectFit"/>
+
+    </Grid>
 </ContentPage>

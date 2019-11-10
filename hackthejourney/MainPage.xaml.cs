@@ -12,33 +12,17 @@ namespace hackthejourney
         public MainPage()
         {
             InitializeComponent();
-            calendarButton.Clicked += CalendarButton_Clicked;
-            homeButton.Clicked += HomeButton_Clicked;
-            guideButton.Clicked += GuideButton_Clicked;
-            flightButton.Clicked += FlightButton_Clicked;
+           
         }
 
-        private void FlightButton_Clicked(object sender, EventArgs e)
+        async void OnFlightButtonClicked(object sender, EventArgs e)
         {
-            // FlightInfo f = new FlightInfo();
-            // f.IsVisible = true;
-            App.Current.MainPage = new FlightInfo(); 
-
+            await Navigation.PushAsync(new FlightInfo());
         }
-
-        private void GuideButton_Clicked(object sender, EventArgs e)
+        async void OnHomeButtonClicked(object sender, EventArgs e)
         {
-            // await App.Current.MainPage
+            await Navigation.PushAsync(new ReminderPage());
         }
 
-        private void HomeButton_Clicked(object sender, EventArgs e)
-        {
-            // throw new NotImplementedException();
-        }
-
-        private void CalendarButton_Clicked(object sender, EventArgs e)
-        {
-            // throw new NotImplementedException();
-        }
     }
 }

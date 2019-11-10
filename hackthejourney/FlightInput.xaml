@@ -42,8 +42,8 @@
                    Grid.ColumnSpan="2"
                    HorizontalOptions="Center"
                    VerticalOptions="CenterAndExpand"
-                   BackgroundColor="MediumAquamarine"/>
-
+                   BackgroundColor="MediumAquamarine">
+            </Button>
     </Grid>
 
 </ContentPage>

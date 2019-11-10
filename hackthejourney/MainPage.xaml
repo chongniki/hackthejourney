@@ -42,7 +42,6 @@
               </Frame>
 
           </Grid>
-
             <ImageButton x:Name="calendarButton"
                     Source="calendar.png"
                     Grid.Row="4"
@@ -70,9 +69,10 @@
                         HorizontalOptions="EndAndExpand"
                         HeightRequest="70"
                         WidthRequest="55"
-                        Aspect="AspectFit"/>
+                        Aspect="AspectFit"
+                        Clicked="OnHomeButtonClicked"/>
             <ImageButton x:Name="guideButton"
-                        Clicked="GuideButton_Clicked"
+                        Clicked="OnFlightButtonClicked"
                         Source="guide.png"
                         Grid.Row="4"
                         Grid.Column="3"

@@ -12,8 +12,10 @@
   <ItemGroup>
     <Compile Remove="MyPage.xaml.cs" />
     <Compile Remove="FlightInfo.cs" />
+    <Compile Remove="FlightInput.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="MyPage.xaml" />
+    <EmbeddedResource Remove="FlightInput.xaml" />
   </ItemGroup>
 </Project>

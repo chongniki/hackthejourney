@@ -7,6 +7,7 @@ namespace hackthejourney
 {
     public partial class BookingDetails : ContentPage
     {
+
         public BookingDetails()
         {
             InitializeComponent();
