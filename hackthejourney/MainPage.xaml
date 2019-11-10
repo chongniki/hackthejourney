@@ -43,7 +43,8 @@
 
           </Grid>
 
-            <ImageButton Source="calendar.png"
+            <ImageButton x:Name="calendarButton"
+                    Source="calendar.png"
                     Grid.Row="4"
                     Grid.Column="0"
                     VerticalOptions="End"
@@ -51,30 +52,35 @@
                     HeightRequest="70"
                     WidthRequest="55"
                     Aspect="AspectFit"/>
-            <ImageButton Source="flights.png"
-                    Grid.Row="4"
-                    Grid.Column="1"
-                    VerticalOptions="End"
-                    HorizontalOptions="EndAndExpand"
-                    HeightRequest="70"
-                    WidthRequest="54"
-                    Aspect="AspectFit"/>
-            <ImageButton Source="home.png"
-                    Grid.Row="4"
-                    Grid.Column="2"
-                    VerticalOptions="End"
-                    HorizontalOptions="EndAndExpand"
-                    HeightRequest="70"
-                    WidthRequest="55"
-                    Aspect="AspectFit"/>
-            <ImageButton Source="guide.png"
-                    Grid.Row="4"
-                    Grid.Column="3"
-                    VerticalOptions="End"
-                    HorizontalOptions="EndAndExpand"
-                    HeightRequest="70"
-                    WidthRequest="55"
-                    Aspect="AspectFit"/>
+            <ImageButton x:Name="flightButton"
+                        Clicked="FlightButton_Clicked"
+                        Source="flights.png"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"
+                        HeightRequest="70"
+                        WidthRequest="54"
+                        Aspect="AspectFit"/>
+            <ImageButton x:Name="homeButton"
+                        Source="home.png"
+                        Grid.Row="4"
+                        Grid.Column="2"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"
+                        HeightRequest="70"
+                        WidthRequest="55"
+                        Aspect="AspectFit"/>
+            <ImageButton x:Name="guideButton"
+                        Clicked="GuideButton_Clicked"
+                        Source="guide.png"
+                        Grid.Row="4"
+                        Grid.Column="3"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"
+                        HeightRequest="70"
+                        WidthRequest="55"
+                        Aspect="AspectFit"/>
 
     </Grid>
 

@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="hackthejourney.ReminderPage">
 
-    <Grid BackgroundColor="White">
+    <Grid BackgroundColor="White"
+          x:Name="HomeGrid"
+          IsVisible="true">
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -24,17 +26,23 @@
                   Grid.Row="0"
                   Grid.Column="0"/>
           <Grid Grid.Row="1"
-                Grid.Column="1"
+                Grid.RowSpan="2"
+                Grid.Column="0"
                 Grid.ColumnSpan="3">
-              <Frame HorizontalOptions="Center"
+              <Frame HorizontalOptions="CenterAndExpand"
                   VerticalOptions="CenterAndExpand"
                   Grid.Row="1"
                   Grid.RowSpan="3"
-                  Grid.Column="0"
-                  Grid.ColumnSpan="2">
+                  Grid.Column="1"
+                  Grid.ColumnSpan="3">
                   <Label Text="Hey Laura! It's time for your insulin shot."
-                         FontSize="15"/>
-              </Frame>
+                            FontSize="15"/>
+            </Frame>
+            <Button Text="Okay"
+                    Grid.Row="3"
+                    Grid.Column="2"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"/>
 
           </Grid>
 

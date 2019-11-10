@@ -11,6 +11,8 @@ namespace hackthejourney
             InitializeComponent();
 
             MainPage = new MainPage();
+            FlightInfo = new FlightInfo();
+        
         }
 
         protected override void OnStart ()
